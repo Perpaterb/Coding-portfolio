@@ -1,0 +1,299 @@
+article {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .navbardiv{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+  
+  }
+   .navbarimg{
+    position: fixed;
+    width:100%;
+  }
+  
+  .maindiv{
+    margin-top: -5px;
+  }
+  .mainnavbarimg{
+    opacity: 0;
+    width:100%;
+  }
+  
+  /* Main image behind the text with z index */
+  .mainimg{
+    position: fixed;
+    width:100%;
+    z-index: -1;
+  }
+  
+  .nav_but {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    position: fixed;
+  
+  }
+  
+  
+  /* Background setup for each page */
+  /* Using orientation to pick screen type*/
+  /* Navbar buttons also move arround in relation to the "background" pics*/
+  /* a CSS file is needed for each of the nav pages as the portrait pages buttons move around.*/
+  
+  @media (orientation: landscape) and (min-width: 1921px){
+    .navbarimg, .mainnavbarimg{
+      content:url("/img/Folder_blog_3440x1440_Top.jpg"); 
+    }
+    .mainimg{
+      content:url("/img/Folder_blog_3440x1440_Bot.jpg"); 
+    }
+    #Def_Nav_Me{
+      left: 29%;
+      width: 9%;
+      top: 55px;
+      height: 110px;
+    }
+    
+    #Def_Nav_blog{
+      cursor: pointer;
+      position: fixed;
+      left: 39%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 9%;
+      top: 55px;
+      height: 110px;
+    }
+    
+    #Def_Nav_skills{
+      cursor: pointer;
+      position: fixed;
+      left: 48.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 9%;
+      top: 55px;
+      height: 110px;
+    }
+    
+    #Def_Nav_work{
+      cursor: pointer;
+      position: fixed;
+      left: 58%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 9%;
+      top: 55px;
+      height: 110px;
+    }
+    
+    #Def_Nav_contact{
+      cursor: pointer;
+      position: fixed;
+      left: 67.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 9%;
+      top: 55px;
+      height: 110px;
+    }
+    }
+  
+  @media (orientation: landscape) and (max-width: 1920px){
+    .navbarimg, .mainnavbarimg{
+      content:url("/img/Folder_blog_1080p_Top.jpg"); 
+    }
+    .mainimg{
+      content:url("/img/Folder_blog_1080p_Bot.jpg"); 
+    }
+    .nav_me{
+      cursor: pointer;
+      position: fixed;
+      left: 22%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 13%;
+      top: 50px;
+      height: 80px;
+    }
+    
+    .nav_blog{
+      cursor: pointer;
+      position: fixed;
+      left: 35.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 13%;
+      top: 50px;
+      height: 80px;
+      }
+    
+    .nav_skills{
+      cursor: pointer;
+      position: fixed;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 13%;
+      top: 50px;
+      height: 80px;
+      }
+    
+    .nav_work{
+      cursor: pointer;
+      position: fixed;
+      left: 61%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 11%;
+      top: 50px;
+      height: 80px;
+     } 
+  
+    .nav_contact{
+      cursor: pointer;
+      position: fixed;
+      left: 72%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 10%;
+      top: 50px;
+      height: 80px;
+      background: transparent;
+      border: none !important;
+      font-size:0;
+    }
+    .nav_contact:focus {outline:0;}
+    }
+  
+  @media (orientation: portrait) and (min-width: 751px){
+    .navbarimg, .mainnavbarimg{
+      content:url("/img/Folder_blog_MobBig_Top.jpg"); 
+    }
+    .mainimg{
+      content:url("/img/Folder_blog_MobBig_Bot.jpg"); 
+    }
+    .nav_me{
+      cursor: pointer;
+      position: fixed;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 95px;
+      height: 60px;
+    }
+    
+    .nav_blog{
+      cursor: pointer;
+      position: fixed;
+      left: 35.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 95px;
+      height: 60px;
+    }
+    
+    .nav_skills{
+      cursor: pointer;
+      position: fixed;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 65px;
+      height: 75px;
+    }
+    
+    .nav_work{
+      cursor: pointer;
+      position: fixed;
+      left: 35.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 30px;
+      height: 60px;
+    }
+    
+    .nav_contact{
+      cursor: pointer;
+      position: fixed;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 30px;
+      height: 60px;
+    }
+    }
+  
+  @media (orientation: portrait) and (max-width: 750px){
+    .navbarimg, .mainnavbarimg{
+      content:url("/img/Folder_blog_MobSmall_Top.jpg"); 
+    }
+    .mainimg{
+      content:url("/img/Folder_blog_MobSmall_Bot.jpg"); 
+    }
+    .nav_me{
+      cursor: pointer;
+      position: fixed;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 60px;
+      height: 30px;
+    }
+    
+    .nav_blog{
+      cursor: pointer;
+      position: fixed;
+      left: 35.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 60px;
+      height: 30px;
+    }
+    
+    .nav_skills{
+      cursor: pointer;
+      position: fixed;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 45px;
+      height: 50px;
+    }
+    
+    .nav_work{
+      cursor: pointer;
+      position: fixed;
+      left: 35.5%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 20px;
+      height: 40px;
+    }
+    
+    .nav_contact{
+      cursor: pointer;
+      position: fixed;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      width: 24%;
+      top: 20px;
+      height: 30px;
+    }
+    }
+  
