@@ -1,17 +1,10 @@
-article {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-}
-
 .navbardiv {
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
 }
 
-.navbarimg {
+.navbarimg_def, .navbarimg_me, .navbarimg_blog, .navbarimg_skills, .navbarimg_work, .navbarimg_contact {
   position: fixed;
   width: 100%;
 }
@@ -20,31 +13,43 @@ article {
   margin-top: -5px;
 }
 
-.mainnavbarimg {
+.mainnavbarimg_def, .mainnavbarimg_me, .mainnavbarimg_blog, .mainnavbarimg_skills, .mainnavbarimg_work, .mainnavbarimg_contact {
   opacity: 0;
   width: 100%;
 }
 
 /* Main image behind the text with z index */
-.mainimg {
+.mainimg_def, .mainimg_me, .mainimg_blog, .mainimg_skills, .mainimg_work, .mainimg_contact {
   position: fixed;
   width: 100%;
   z-index: -1;
 }
 
+/* Class aspects for all buttons*/
 .nav_but {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   cursor: pointer;
   position: fixed;
-  background: transparent;
+  background: rgba(212, 193, 105, 0);
   border: none !important;
   font-size: 0;
 }
 
+/* stops Button border on click*/
 .nav_but:focus {
   outline: 0;
+}
+
+/* button glow */
+.nav_but:hover {
+  color: #ffffff;
+  background: rgba(212, 193, 105, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(212, 193, 105, 0.2);
+          box-shadow: 0px 0px 10px 10px rgba(212, 193, 105, 0.2);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 /* Background setup for each page */
@@ -52,37 +57,68 @@ article {
 /* Navbar buttons also move arround in relation to the "background" pics*/
 /* a CSS file is needed for each of the nav pages as the portrait pages buttons move around.*/
 @media (orientation: landscape) and (min-width: 1921px) {
-  .navbarimg, .mainnavbarimg {
+  /*diforent img for this diforent pages*/
+  .navbarimg_def, .mainnavbarimg_def {
     content: url("/img/Folder_blog_3440x1440_Top.jpg");
   }
-  .mainimg {
+  .mainimg_def {
     content: url("/img/Folder_blog_3440x1440_Bot.jpg");
   }
-  #def_nav_me {
+  .navbarimg_me, .mainnavbarimg_me {
+    content: url("/img/Folder_me_3440x1440_Top.jpg");
+  }
+  .mainimg_me {
+    content: url("/img/Folder_me_3440x1440_Bot.jpg");
+  }
+  .navbarimg_blog, .mainnavbarimg_blog {
+    content: url("/img/Folder_blog_3440x1440_Top.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Folder_blog_3440x1440_Bot.jpg");
+  }
+  .navbarimg_skills, .mainnavbarimg_skills {
+    content: url("/img/Folder_skills_3440x1440_Top.jpg");
+  }
+  .mainimg_skills {
+    content: url("/img/Folder_skills_3440x1440_Bot.jpg");
+  }
+  .navbarimg_work, .mainnavbarimg_work {
+    content: url("/img/Folder_work_3440x1440_Top.jpg");
+  }
+  .mainimg_work {
+    content: url("/img/Folder_work_3440x1440_Bot.jpg");
+  }
+  .navbarimg_contact, .mainnavbarimg_contact {
+    content: url("/img/Folder_contact_3440x1440_Top.jpg");
+  }
+  .mainimg_contact {
+    content: url("/img/Folder_contact_3440x1440_Bot.jpg");
+  }
+  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
     left: 29%;
     width: 9%;
     top: 55px;
     height: 110px;
   }
-  #def_nav_blog {
+  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
     left: 39%;
     width: 9%;
     top: 55px;
     height: 110px;
   }
-  #def_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
     left: 48.5%;
     width: 9%;
     top: 55px;
     height: 110px;
   }
-  #def_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
     left: 58%;
     width: 9%;
     top: 55px;
     height: 110px;
   }
-  #def_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
     left: 67.5%;
     width: 9%;
     top: 55px;
@@ -91,37 +127,67 @@ article {
 }
 
 @media (orientation: landscape) and (max-width: 1920px) {
-  .navbarimg, .mainnavbarimg {
+  .navbarimg_def, .mainnavbarimg_def {
     content: url("/img/Folder_blog_1080p_Top.jpg");
   }
-  .mainimg {
+  .mainimg_def {
     content: url("/img/Folder_blog_1080p_Bot.jpg");
   }
-  #def_nav_me {
+  .navbarimg_me, .mainnavbarimg_me {
+    content: url("/img/Folder_me_1080p_Top.jpg");
+  }
+  .mainimg_me {
+    content: url("/img/Folder_me_1080p_Bot.jpg");
+  }
+  .navbarimg_blog, .mainnavbarimg_blog {
+    content: url("/img/Folder_blog_1080p_Top.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Folder_blog_1080p_Bot.jpg");
+  }
+  .navbarimg_skills, .mainnavbarimg_skills {
+    content: url("/img/Folder_skills_1080p_Top.jpg");
+  }
+  .mainimg_skills {
+    content: url("/img/Folder_skills_1080p_Bot.jpg");
+  }
+  .navbarimg_work, .mainnavbarimg_work {
+    content: url("/img/Folder_work_1080p_Top.jpg");
+  }
+  .mainimg_work {
+    content: url("/img/Folder_work_1080p_Bot.jpg");
+  }
+  .navbarimg_contact, .mainnavbarimg_contact {
+    content: url("/img/Folder_contact_1080p_Top.jpg");
+  }
+  .mainimg_contact {
+    content: url("/img/Folder_contact_1080p_Bot.jpg");
+  }
+  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
     left: 22%;
     width: 13%;
     top: 50px;
     height: 80px;
   }
-  #def_nav_blog {
+  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
     left: 35.5%;
     width: 13%;
     top: 50px;
     height: 80px;
   }
-  #def_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
     left: 49%;
     width: 13%;
     top: 50px;
     height: 80px;
   }
-  #def_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
     left: 61%;
     width: 11%;
     top: 50px;
     height: 80px;
   }
-  #def_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
     left: 72%;
     width: 10%;
     top: 50px;
@@ -130,37 +196,67 @@ article {
 }
 
 @media (orientation: portrait) and (min-width: 751px) {
-  .navbarimg, .mainnavbarimg {
+  .navbarimg_def, .mainnavbarimg_def {
     content: url("/img/Folder_blog_MobBig_Top.jpg");
   }
-  .mainimg {
+  .mainimg_def {
     content: url("/img/Folder_blog_MobBig_Bot.jpg");
   }
-  #def_nav_me {
+  .navbarimg_me, .mainnavbarimg_me {
+    content: url("/img/Folder_me_MobBig_Top.jpg");
+  }
+  .mainimg_me {
+    content: url("/img/Folder_me_MobBig_Bot.jpg");
+  }
+  .navbarimg_blog, .mainnavbarimg_blog {
+    content: url("/img/Folder_blog_MobBig_Top.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Folder_blog_MobBig_Bot.jpg");
+  }
+  .navbarimg_skills, .mainnavbarimg_skills {
+    content: url("/img/Folder_skills_MobBig_Top.jpg");
+  }
+  .mainimg_skills {
+    content: url("/img/Folder_skills_MobBig_Bot.jpg");
+  }
+  .navbarimg_work, .mainnavbarimg_work {
+    content: url("/img/Folder_work_MobBig_Top.jpg");
+  }
+  .mainimg_work {
+    content: url("/img/Folder_work_MobBig_Bot.jpg");
+  }
+  .navbarimg_contact, .mainnavbarimg_contact {
+    content: url("/img/Folder_contact_MobBig_Top.jpg");
+  }
+  .mainimg_contact {
+    content: url("/img/Folder_contact_MobBig_Bot.jpg");
+  }
+  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
     left: 60%;
     width: 24%;
     top: 95px;
     height: 60px;
   }
-  #def_nav_blog {
+  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
     left: 35.5%;
     width: 24%;
     top: 95px;
     height: 60px;
   }
-  #def_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
     left: 85%;
     width: 24%;
     top: 65px;
     height: 75px;
   }
-  #def_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
     left: 35.5%;
     width: 24%;
     top: 30px;
     height: 60px;
   }
-  #def_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
     left: 60%;
     width: 24%;
     top: 30px;
@@ -169,41 +265,145 @@ article {
 }
 
 @media (orientation: portrait) and (max-width: 750px) {
-  .navbarimg, .mainnavbarimg {
+  .navbarimg_def, .mainnavbarimg_def {
     content: url("/img/Folder_blog_MobSmall_Top.jpg");
   }
-  .mainimg {
+  .mainimg_def {
     content: url("/img/Folder_blog_MobSmall_Bot.jpg");
   }
-  #def_nav_me {
+  .navbarimg_me, .mainnavbarimg_me {
+    content: url("/img/Folder_me_MobSmall_Top.jpg");
+  }
+  .mainimg_me {
+    content: url("/img/Folder_me_MobSmall_Bot.jpg");
+  }
+  .navbarimg_blog, .mainnavbarimg_blog {
+    content: url("/img/Folder_blog_MobSmall_Top.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Folder_blog_MobSmall_Bot.jpg");
+  }
+  .navbarimg_skills, .mainnavbarimg_skills {
+    content: url("/img/Folder_skills_MobSmall_Top.jpg");
+  }
+  .mainimg_skills {
+    content: url("/img/Folder_skills_MobSmall_Bot.jpg");
+  }
+  .navbarimg_work, .mainnavbarimg_work {
+    content: url("/img/Folder_work_MobSmall_Top.jpg");
+  }
+  .mainimg_work {
+    content: url("/img/Folder_work_MobSmall_Bot.jpg");
+  }
+  .navbarimg_contact, .mainnavbarimg_contact {
+    content: url("/img/Folder_contact_MobSmall_Top.jpg");
+  }
+  .mainimg_contact {
+    content: url("/img/Folder_contact_MobSmall_Bot.jpg");
+  }
+  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
     left: 60%;
     width: 24%;
     top: 60px;
     height: 30px;
   }
-  #def_nav_blog {
+  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
     left: 35.5%;
     width: 24%;
     top: 60px;
     height: 30px;
   }
-  #def_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
     left: 85%;
     width: 24%;
     top: 45px;
     height: 50px;
   }
-  #def_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
     left: 35.5%;
     width: 24%;
     top: 20px;
     height: 40px;
   }
-  #def_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
     left: 60%;
     width: 24%;
     top: 20px;
     height: 30px;
   }
+}
+
+/*Work display divs */
+.mainpage {
+  margin: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  width: 50%;
+}
+
+.titles {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.work_display_div {
+  display: none;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgba(65, 64, 64, 0.671);
+  margin-top: 20px;
+}
+
+/*Spacer*/
+#workspacer {
+  padding-top: 20px;
+}
+
+ul {
+  cursor: pointer;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2;
+}
+
+li {
+  float: left;
+  margin: 2px;
+  /*border:1px solid rgba(0, 0, 0, 0.5);   "Broken" ??? */
+  background-color: rgba(65, 64, 64, 0.671);
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.activeworkbar {
+  background-color: rgba(10, 177, 94, 0.2);
+}
+
+li a:hover:not(.activeworkbar) {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=Style.css.map */
