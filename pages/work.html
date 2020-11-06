@@ -11,10 +11,15 @@
         <!-- icon on tab set to a folder -->
         <!-- Paths are set to navigate from the root -->
         <link rel="icon" type="image/png" href="/img/icon-briefcase-240.png" sizes="128x128" />
+
+        <!-- JS for opening the work divs -->
+        <script src="/js/OpeningContent.js"></script>
  
     </head>
-    <body>
-        <Div class="navbardiv">
+    <body class="navbardiv">
+        <header>
+            <!-- Nav bar -->
+            <!-- Id for setting the button pos -->
             <img class="navbarimg_work">
             <img class="mainnavbarimg_work">
             <button id="work_nav_me" class="nav_but" type="submit" onclick="window.location.href='/pages/me.html'">Me</button>
@@ -22,29 +27,66 @@
             <button id="work_nav_skills" class="nav_but" type="submit" onclick="window.location.href='/pages/skills.html'">Skills</button>
             <button id="work_nav_work" class="nav_but" type="submit" onclick="window.location.href='/pages/work.html'">Work</button>
             <button id="work_nav_contact" class="nav_but" type="submit" onclick="window.location.href='/pages/contact.html'">Contact</button>
-          
-            <Div class="maindiv">
-                <img class="mainimg_work">
-                <article>
-                    Building mr concerns servants in he outlived am breeding. He so lain good miss when sell some at if. Told hand so an rich gave next. How doubt yet again see son smart. While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. Past add size game cold girl off how old. 
-                    In entirely be to at settling felicity. Fruit two match men you seven share. Needed as or is enough points. Miles at smart ﻿no marry whole linen mr. Income joy nor can wisdom summer. Extremely depending he gentleman improving intention rapturous as. 
-                    Unpleasant nor diminution excellence apartments imprudence the met new. Draw part them he an to he roof only. Music leave say doors him. Tore bred form if sigh case as do. Staying he no looking if do opinion. Sentiments way understood end partiality and his. 
-                    Whole every miles as tiled at seven or. Wished he entire esteem mr oh by. Possible bed you pleasure civility boy elegance ham. He prevent request by if in pleased. Picture too and concern has was comfort. Ten difficult resembled eagerness nor. Same park bore on be. Warmth his law design say are person. Pronounce suspected in belonging conveying ye repulsive. 
-                    Style too own civil out along. Perfectly offending attempted add arranging age gentleman concluded. Get who uncommonly our expression ten increasing considered occasional travelling. Ever read tell year give may men call its. Piqued son turned fat income played end wicket. To do noisy downs round an happy books. 
-                    Ignorant saw her her drawings marriage laughter. Case oh an that or away sigh do here upon. Acuteness you exquisite ourselves now end forfeited. Enquire ye without it garrets up himself. Interest our nor received followed was. Cultivated an up solicitude mr unpleasant. 
-                    Manor we shall merit by chief wound no or would. Oh towards between subject passage sending mention or it. Sight happy do burst fruit to woody begin at. Assurance perpetual he in oh determine as. The year paid met him does eyes same. Own marianne improved sociable not out. Thing do sight blush mr an. Celebrated am announcing delightful remarkably we in literature it solicitude. Design use say piqued any gay supply. Front sex match vexed her those great. 
-                    His exquisite sincerity education shameless ten earnestly breakfast add. So we me unknown as improve hastily sitting forming. Especially favourable compliment but thoroughly unreserved saw she themselves. Sufficient impossible him may ten insensible put continuing. Oppose exeter income simple few joy cousin but twenty. Scale began quiet up short wrong in in. Sportsmen shy forfeited engrossed may can. 
-                    An so vulgar to on points wanted. Not rapturous resolving continued household northward gay. He it otherwise supported instantly. Unfeeling agreeable suffering it on smallness newspaper be. So come must time no as. Do on unpleasing possession as of unreserved. Yet joy exquisite put sometimes enjoyment perpetual now. Behind lovers eat having length horses vanity say had its. 
-                    Compliment interested discretion estimating on stimulated apartments oh. Dear so sing when in find read of call. As distrusts behaviour abilities workective is. Never at water me might. On formed merits hunted unable merely by mr whence or. Possession the unpleasing simplicity her uncommonly. 
-                </article>
-            </Div>
-        </Div>
-
- 
+        </header>
         
+        <!--Main page content-->
+        <div class="maindiv">
+            <img class="mainimg_work">
+            <div class="mainpage">
+                
+                <!-- Work browser-->
 
+                <div class="titles">Firt type or work</div>
+
+                <ul>
+                    <li><a id="workbar_1_01" onclick="displayworkdiv('workdiv_1_01','workbar_1_01')"> Work Example 1 mid title</a></li>
+                    <li><a id="workbar_1_02" onclick="displayworkdiv('workdiv_1_02','workbar_1_02')"> Work Example 2 longer title bla bla bla bla </a></li>
+                    <li><a id="workbar_1_03" onclick="displayworkdiv('workdiv_1_03','workbar_1_03')"> Work Example 3</a></li>
+                    <li><a id="workbar_1_04" onclick="displayworkdiv('workdiv_1_04','workbar_1_04')"> Work Example 4</a></li>
+                </ul>
+
+                <!-- un hidden work divs as needed Work browser-->
+                <div id="workdiv_1_01" class="work_display_div">
+                <a>This is my Work Example 1.</a>
+                </div>
+                <div id="workdiv_1_02" class="work_display_div">
+                <a>This is my Work Example 2.</a>
+                </div>
+                <div id="workdiv_1_03" class="work_display_div">
+                <a>This is my Work Example 3.</a>
+                </div>
+                <div id="workdiv_1_04" class="work_display_div">
+                <a>This is my Work Example 4.</a>
+                </div>
+
+                <div class="titles">Second type or work</div>
+
+                <ul>
+                    <li><a id="workbar_2_01" onclick="displayworkdiv('workdiv_2_01','workbar_2_01')"> Work Example 1 mid title</a></li>
+                    <li><a id="workbar_2_02" onclick="displayworkdiv('workdiv_2_02','workbar_2_02')"> Work Example 2 longer title bla bla bla bla </a></li>
+                    <li><a id="workbar_2_03" onclick="displayworkdiv('workdiv_2_03','workbar_2_03')"> Work Example 3</a></li>
+                    <li><a id="workbar_2_04" onclick="displayworkdiv('workdiv_2_04','workbar_2_04')"> Work Example 4</a></li>
+                </ul>
+
+                <!-- un hidden work divs as needed Work browser-->
+                <div id="workdiv_2_01" class="work_display_div">
+                This is my Work Example 1.
+                </div>
+                <div id="workdiv_2_02" class="work_display_div">
+                This is my Work Example 2.
+                </div>
+                <div id="workdiv_2_03" class="work_display_div">
+                This is my Work Example 3.
+                </div>
+                <div id="workdiv_2_04" class="work_display_div">
+                This is my Work Example 4.
+                </div>
+
+
+            </div>
+        </div>
         
-
         <footer></footer>
+
     </body>
 </html>
