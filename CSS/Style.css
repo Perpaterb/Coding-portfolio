@@ -1,7 +1,6 @@
 .navbardiv {
   margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
+  margin-left: 0px;
 }
 
 .navbarimg_def, .navbarimg_me, .navbarimg_blog, .navbarimg_skills, .navbarimg_work, .navbarimg_contact {
@@ -63,6 +62,9 @@
   }
   .mainimg_def {
     content: url("/img/Folder_blog_3440x1440_Bot.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Blank_Background_3440x1440.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
     content: url("/img/Folder_me_3440x1440_Top.jpg");
@@ -133,6 +135,9 @@
   .mainimg_def {
     content: url("/img/Folder_blog_1080p_Bot.jpg");
   }
+  .mainimg_blog {
+    content: url("/img/Blank_Background_1080p.jpg");
+  }
   .navbarimg_me, .mainnavbarimg_me {
     content: url("/img/Folder_me_1080p_Top.jpg");
   }
@@ -201,6 +206,9 @@
   }
   .mainimg_def {
     content: url("/img/Folder_blog_MobBig_Bot.jpg");
+  }
+  .mainimg_blog {
+    content: url("/img/Blank_Background_MobBig.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
     content: url("/img/Folder_me_MobBig_Top.jpg");
@@ -271,6 +279,9 @@
   .mainimg_def {
     content: url("/img/Folder_blog_MobSmall_Bot.jpg");
   }
+  .mainimg_blog {
+    content: url("/img/Blank_Background_MobSmall.jpg");
+  }
   .navbarimg_me, .mainnavbarimg_me {
     content: url("/img/Folder_me_MobSmall_Top.jpg");
   }
@@ -340,7 +351,7 @@
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  width: 50%;
+  width: 60%;
 }
 
 .titles {
@@ -348,6 +359,8 @@
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .work_display_div {
@@ -357,11 +370,7 @@
   text-align: center;
   background-color: rgba(65, 64, 64, 0.671);
   margin-top: 20px;
-}
-
-/*Spacer*/
-#workspacer {
-  padding-top: 20px;
+  color: white;
 }
 
 ul {
@@ -374,6 +383,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 2;
+  color: white;
 }
 
 li {
@@ -393,10 +403,10 @@ li a {
       -ms-user-select: none;
           user-select: none;
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  color: white;
 }
 
 .activeworkbar {
@@ -405,5 +415,106 @@ li a {
 
 li a:hover:not(.activeworkbar) {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*contact page*/
+#contact_email_icon {
+  content: url("/img/icon_email_120.png");
+}
+
+#contact_github_icon {
+  content: url("/img/icon_github_120.png");
+}
+
+#contact_linkedin_icon {
+  content: url("/img/icon_linkedin_120.png");
+}
+
+.contacts_info_text {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*Me page*/
+.me_pictures {
+  width: 80%;
+}
+
+#me_picture0 {
+  content: url("/img/profile_pic1.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture1 {
+  content: url("/img/profile_Game_boy.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture2 {
+  content: url("/img/profile_PC.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture3 {
+  content: url("/img/profile_Puzzle_box.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture4 {
+  content: url("/img/profile_Death.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture5 {
+  content: url("/img/profile_neck_lace.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture6 {
+  content: url("/img/profile_archaeopteris.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture7 {
+  content: url("/img/profile_CatCar_bed.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture8 {
+  content: url("/img/profile_Grute.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#me_picture9 {
+  content: url("/img/profile_Knife_block.jpg");
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*Blog*/
+.mainblog {
+  margin: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  width: 60%;
+}
+
+.blogpost {
+  border-radius: 25px;
+  border: 2px solid #393b35;
+  padding: 20px;
 }
 /*# sourceMappingURL=Style.css.map */
