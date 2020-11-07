@@ -1,0 +1,69 @@
+/* remove defalt margin*/
+body{
+    margin: 0px;
+    width: 100%;
+}
+#background{
+    position: absolute;
+    background-image: url("/img/filling_background.jpg");
+    background-size: 100%;
+    width: 100%;
+    height: 100%
+}
+
+/* make dive full screen*/
+#horizontaldiv{
+    position: fixed;;
+    height: 100%;
+    width: 100%;
+}
+/* center line at height: 100%*/
+#verticaldiv{
+    position: relative;
+    height: 100%;
+    width: 0px;
+    top: 0;
+    left: 50%;
+    background-color: blue;
+}
+
+/* img moves based on the center line*/
+
+/* 2 img left and right*/
+#fallingimg_back_left{
+    content:url("/img/filling_1080p_left.jpg");
+    position: absolute;
+    height: 100%;
+    right: 0px;
+}
+#fallingimg_back_right{
+    content:url("/img/filling_1080p_right.jpg");
+    position: absolute;
+    height: 100%;
+}
+
+/* 2 img draw img left and right*/
+/* thease move for the open animation*/
+#fallingimg_draw_left{
+    content:url("/img/filling_1080p_drew_left.jpg");
+    position: absolute;
+    right: 0px;
+    top: 9.8%;
+    height: 85.7%;
+}
+#fallingimg_draw_right{
+    content:url("/img/filling_1080p_drew_right.jpg");
+    position: absolute;
+    top: 9.8%;
+    height: 85.7%;
+}
+/* full screen button to start animatiom*/
+#indexbutton{
+    position: absolute;
+    cursor: pointer;
+    background: rgba(212, 192, 105, 0);
+    border: none !important;
+    font-size:0;
+    height: 100%;
+    width: 100%;
+}
