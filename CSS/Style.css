@@ -1,27 +1,37 @@
+/*no gap in the top left*/
 .navbardiv {
   margin-top: -10px;
   margin-left: 0px;
 }
 
+/*nar is fixed */
 .navbarimg_def, .navbarimg_me, .navbarimg_blog, .navbarimg_skills, .navbarimg_work, .navbarimg_contact {
   position: fixed;
   width: 100%;
 }
 
+/*no gap in the top left*/
 .maindiv {
   margin-top: -5px;
 }
 
+/*extra nav bar to make the main page img sill in the currect position*/
 .mainnavbarimg_def, .mainnavbarimg_me, .mainnavbarimg_blog, .mainnavbarimg_skills, .mainnavbarimg_work, .mainnavbarimg_contact {
   opacity: 0;
   width: 100%;
 }
 
 /* Main image behind the text with z index */
-.mainimg_def, .mainimg_me, .mainimg_blog, .mainimg_skills, .mainimg_work, .mainimg_contact {
+.mainimg_def, .mainimg_me, .mainimg_blog, .mainimg_skills, .mainimg_work, .mainimg_contact, .mainimg_blog_pages {
   position: fixed;
   width: 100%;
   z-index: -1;
+}
+
+/* Main image on the blogpages differ becase the nav is gone*/
+.mainimg_blog_pages {
+  margin-top: -5px;
+  margin-left: -10px;
 }
 
 /* Class aspects for all buttons*/
@@ -31,7 +41,7 @@
   -ms-transform: translate(-50%, -50%);
   cursor: pointer;
   position: fixed;
-  background: rgba(212, 193, 105, 0);
+  background: rgba(212, 192, 105, 0);
   border: none !important;
   font-size: 0;
 }
@@ -63,7 +73,7 @@
   .mainimg_def {
     content: url("/img/Folder_blog_3440x1440_Bot.jpg");
   }
-  .mainimg_blog {
+  .mainimg_blog_pages {
     content: url("/img/Background_3440x1440.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
@@ -135,7 +145,7 @@
   .mainimg_def {
     content: url("/img/Folder_blog_1080p_Bot.jpg");
   }
-  .mainimg_blog {
+  .mainimg_blog_pages {
     content: url("/img/Background_1080p.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
@@ -207,7 +217,7 @@
   .mainimg_def {
     content: url("/img/Folder_blog_MobBig_Bot.jpg");
   }
-  .mainimg_blog {
+  .mainimg_blog_pages {
     content: url("/img/Background_MobBig.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
@@ -240,35 +250,41 @@
   .mainimg_contact {
     content: url("/img/Folder_contact_MobBig_Bot.jpg");
   }
-  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
+  /*per page Mob button pos*/
+  #def_nav_me, #blog_nav_me, #contact_nav_contact, #me_nav_blog, #work_nav_blog, #skills_nav_blog {
     left: 60%;
     width: 24%;
-    top: 95px;
-    height: 60px;
+    top: 135px;
+    height: 80px;
+    /*botom right*/
   }
-  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
+  #def_nav_blog, #blog_nav_blog, #contact_nav_work, #me_nav_me, #work_nav_work, #skills_nav_skills {
     left: 35.5%;
     width: 24%;
-    top: 95px;
-    height: 60px;
+    top: 135px;
+    height: 80px;
+    /*bottom left*/
   }
-  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_me, #work_nav_me, #skills_nav_me {
     left: 85%;
     width: 24%;
-    top: 65px;
+    top: 75px;
     height: 75px;
+    /*far right*/
   }
-  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #skills_nav_work, #contact_nav_skills, #work_nav_skills {
     left: 35.5%;
     width: 24%;
-    top: 30px;
-    height: 60px;
+    top: 50px;
+    height: 80px;
+    /*top left*/
   }
-  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #skills_nav_contact, #work_nav_contact, #contact_nav_blog {
     left: 60%;
     width: 24%;
-    top: 30px;
-    height: 60px;
+    top: 50px;
+    height: 80px;
+    /*top right*/
   }
 }
 
@@ -279,7 +295,7 @@
   .mainimg_def {
     content: url("/img/Folder_blog_MobSmall_Bot.jpg");
   }
-  .mainimg_blog {
+  .mainimg_blog_pages {
     content: url("/img/Background_MobSmall.jpg");
   }
   .navbarimg_me, .mainnavbarimg_me {
@@ -312,35 +328,40 @@
   .mainimg_contact {
     content: url("/img/Folder_contact_MobSmall_Bot.jpg");
   }
-  #def_nav_me, #me_nav_me, #blog_nav_me, #skills_nav_me, #work_nav_me, #contact_nav_me {
+  #def_nav_me, #blog_nav_me, #contact_nav_contact, #work_nav_blog, #me_nav_blog, #skills_nav_blog {
     left: 60%;
     width: 24%;
-    top: 60px;
-    height: 30px;
+    top: 80px;
+    height: 50px;
+    /*bottom righ*/
   }
-  #def_nav_blog, #me_nav_blog, #blog_nav_blog, #contact_nav_blog, #skills_nav_blog, #work_nav_blog {
+  #def_nav_blog, #blog_nav_blog, #contact_nav_work, #work_nav_work, #me_nav_me, #skills_nav_skills {
     left: 35.5%;
     width: 24%;
-    top: 60px;
-    height: 30px;
+    top: 80px;
+    height: 50px;
+    /*bottom left*/
   }
-  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #skills_nav_skills, #work_nav_skills {
+  #def_nav_skills, #me_nav_skills, #blog_nav_skills, #contact_nav_skills, #work_nav_me, #skills_nav_me {
     left: 85%;
     width: 24%;
     top: 45px;
     height: 50px;
+    /*Far right*/
   }
-  #def_nav_work, #me_nav_work, #blog_nav_work, #contact_nav_work, #skills_nav_work, #work_nav_work {
+  #def_nav_work, #me_nav_work, #blog_nav_work, #skills_nav_work, #contact_nav_me, #work_nav_skills {
     left: 35.5%;
     width: 24%;
     top: 20px;
-    height: 40px;
+    height: 50px;
+    /*Top left*/
   }
-  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #contact_nav_contact, #skills_nav_contact, #work_nav_contact {
+  #def_nav_contact, #me_nav_contact, #blog_nav_contact, #skills_nav_contact, #work_nav_contact, #contact_nav_blog {
     left: 60%;
     width: 24%;
     top: 20px;
-    height: 30px;
+    height: 50px;
+    /*Top right*/
   }
 }
 
@@ -352,6 +373,14 @@
   font-weight: 500;
   text-align: center;
   width: 60%;
+  padding-top: 3%;
+}
+
+/*mainpage on wide screens*/
+@media (orientation: landscape) and (min-width: 1921px) {
+  .mainpage {
+    width: 50%;
+  }
 }
 
 .titles {
@@ -439,7 +468,7 @@ li a:hover:not(.activeworkbar) {
 
 /*Me page*/
 .me_pictures {
-  width: 80%;
+  width: 60%;
 }
 
 #me_picture0 {
@@ -516,5 +545,56 @@ li a:hover:not(.activeworkbar) {
   border-radius: 25px;
   border: 2px solid #393b35;
   padding: 20px;
+}
+
+/*skills*/
+.Skill_icons {
+  width: 120px;
+  padding: 40px;
+}
+
+#skill_icon1 {
+  content: url("/img/HTML_icon.png");
+}
+
+#skill_icon2 {
+  content: url("/img/CSS_icon.png");
+}
+
+#skill_icon3 {
+  content: url("/img/JS_icon.png");
+}
+
+#skill_icon4 {
+  content: url("/img/UE4_icon.png");
+  padding-bottom: 80px;
+}
+
+#skill_icon5 {
+  content: url("/img/gimp_icon.png");
+}
+
+#skill_icon6 {
+  content: url("/img/F360_icon.png");
+  width: 220px;
+}
+
+#skill_icon7 {
+  content: url("/img/3dsmax_icon.png");
+  width: 220px;
+  padding-bottom: 56px;
+}
+
+#skill_icon8 {
+  content: url("/img/Photoshop_icon.png");
+}
+
+#skill_icon9 {
+  content: url("/img/Premiere_Pro_icon.png");
+}
+
+#skill_icon10 {
+  content: url("/img/blender_icon.png");
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=Style.css.map */

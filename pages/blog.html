@@ -17,7 +17,7 @@
  
     </head>
     <body class="navbardiv">
-        <header>
+        <nav>
             <!-- Nav bar -->
             <!-- Id for setting the button pos -->
             <img class="navbarimg_blog">
@@ -27,29 +27,29 @@
             <button id="blog_nav_skills" class="nav_but" type="submit" onclick="window.location.href='/pages/skills.html'">Skills</button>
             <button id="blog_nav_work" class="nav_but" type="submit" onclick="window.location.href='/pages/work.html'">Work</button>
             <button id="blog_nav_contact" class="nav_but" type="submit" onclick="window.location.href='/pages/contact.html'">Contact</button>
-        </header>
+        </nav>
         
         <!--Main page content-->
-        <div class="maindiv">
+        <section class="maindiv">
             <img class="mainimg_blog">
-            <div class="mainpage">
+            <article class="mainpage">
                 
                 <!-- Blog browser-->
                 <div class="titles">My Blogs</div>
                 
                 <ul>
-                    <li><a id="workbar_1_01" onclick="displayworkdiv('workdiv_1_01','workbar_1_01')"> Creating this portfolio page</a></li>
+                    <li><a id="workbar_1_01" onclick="displayworkdiv('workdiv_1_01','workbar_1_01')"> Coder Academy Assignments 1: Portfolio web page.</a></li>
                     <li><a id="workbar_1_02" onclick="displayworkdiv('workdiv_1_02','workbar_1_02')"> My new pc</a></li>
                 </ul>
 
                 <!-- un hidden work divs as needed Work browser-->
                 <ul> 
-                    <div id="workdiv_1_01" class="work_display_div" onclick="window.location.href='/pages/blogs/Creating_this_portfolio_page.html'">A blog for the creation of this portfolio web page.<br> <b>Click to open page!!</b></div>
+                    <div id="workdiv_1_01" class="work_display_div" onclick="window.location.href='/pages/blogs/Creating_this_portfolio_page.html'">A blog following the steps I took in the creation of this portfolio web page.<br> <b>Click to open page!!</b></div>
                     <div id="workdiv_1_02" class="work_display_div" onclick="window.location.href='/pages/blogs/Creating_a_Custom_G5_PC.html'">A blog about custom building a water cooled computer in a Power Mac G5 case. The iconic Power Mac G5 cases were made from 2003 to 2006.<br> <b>Click to open page!!</b></div>
                 </ul>
 
-            </div>
-        </div>
+            </article>
+        </section>
         
         <footer></footer>
 
