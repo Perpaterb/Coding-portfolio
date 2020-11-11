@@ -7,6 +7,10 @@
         <!-- icon on tab set to a folder -->
         <!-- Paths are set to navigate from the root -->
         <link rel="icon" type="image/png" href="/img/icon-briefcase-240.png" sizes="128x128" />
+        
+        <!-- JS for opening the work divs -->
+        <script src="/js/JS_Scrips.js"></script>
+ 
     
     </head>
     <body>
@@ -22,30 +26,6 @@
 
          <!-- full screen button that starts the draw opening -->
         <button id="indexbutton" type="submit" onclick="opendraw()" ></button>
-
-        <script>
-
-            // JS to change to height and top % to make it look like the draw is opening
-            function opendraw() {
-            var left = document.getElementById("fallingimg_draw_left"); 
-            var right = document.getElementById("fallingimg_draw_right");  
-            var pos = 0;
-            var id = setInterval(frame, 10);
-            function frame() {
-                if (pos == 200) {
-                    clearInterval(id);
-                    window.location.href='/pages/me.html'
-                } else {
-                    pos++; 
-                    left.style.height = ((pos/10) + 85.7) + '%';
-                    left.style.top = (9.8 - (pos / 70)) + '%'; 
-
-                    right.style.height = (( pos / 10) + 85.7) + '%';
-                    right.style.top = (9.8 - (pos / 70)) + '%'; 
-                }
-            }
-            }
-        </script>
 
     </body>
 </html>
