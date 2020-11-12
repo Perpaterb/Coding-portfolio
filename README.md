@@ -61,11 +61,17 @@ So I guess the target audiences are a potential employer, anyone wanting to look
 
 
 #Tech stack
-	HTML
-	CSS
-	SASS
-	Javascript
-	Github
-	Netlify
+
+HTML
+
+CSS
+
+SASS
+
+Javascript
+
+Github
+
+Netlify
 
 
