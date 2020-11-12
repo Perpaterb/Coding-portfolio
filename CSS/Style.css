@@ -402,23 +402,25 @@
   color: white;
 }
 
+/*Blog and work flex boxes*/
 ul {
   cursor: pointer;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 2;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 li {
-  float: left;
   margin: 2px;
-  /*border:1px solid rgba(0, 0, 0, 0.5);   "Broken" ??? */
   background-color: rgba(65, 64, 64, 0.671);
 }
 
