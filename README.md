@@ -10,17 +10,18 @@
 
 I wanted to create a portfolio for the purpose of showing off my work.
 
-I wanted to create a site that didn’t look at all like a template website and was unusable.
-I settled on a filing cabinet as the theme. I wanted a sense of looking into an old school files system to look at my hopefully new school work.
+I wanted to create a site that didn’t look at all like a template.
+
+I settled on a filing cabinet as the theme. I wanted a sense of looking into an "old school" files system to look at my hopefully "new school" work.
 
 #Functionality / features
 
-You start with opening the filing cabinet draw. The "about me" page only opened after the draw opens.
-The aim is a bit of immersion. It’s a hard like between annoying time wasting and immersion. implementing a skip amination on 2nd click would be a good idea I think.
+You start with opening the filing cabinet draw. The "about me" page only opens after the draw opens.
+The aim is a bit of immersion. It’s a hard line between annoying/time wasting and immersion. implementing a skip amination on 2nd click would be a good idea I think.
 
 The navigation bar at the top looks like folders in a filing cabinet. And the actual navigation invisible buttons move as the page size changes. Including looking quite different in portrait. 
 
-Buttons glow slightly when hoved.
+Buttons glow slightly when hovered over.
 
 Wide screen and half wide screen windows are supported. 
 
@@ -56,7 +57,7 @@ Contact
 ![blog](/docs/contact.JPG)
 
 #Target audience
-I am hoping to use this as a personal blog from me projects in the future.
+I am hoping to use this as a personal blog from my projects in the future.
 So I guess the target audiences are a potential employer, anyone wanting to look at my projects and myself.
 
 
