@@ -38,13 +38,13 @@ Index
 ![index](/docs/Index.jpg)
 
 Me
-![me](/docs/Me.JPG)
+![me](/docs/Me.jpg)
 
 Blogs
-![blogs](/docs/blogs.JPG)
+![blogs](/docs/blogs.jpg)
 
 A blog
-![blog](/docs/blog.JPG)
+![blog](/docs/blog.jpg)
 
 Work
 ![me](/docs/work.JPG)
