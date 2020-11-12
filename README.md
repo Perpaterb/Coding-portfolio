@@ -35,7 +35,7 @@ Images are high resolution from 4k and 3440x1440 monitors. Images are appropriat
 Left small mob view, Right close to 16:9
 
 Index
-![index](/docs/Index.JPG)
+![index](/docs/Index.jpg)
 
 Me
 ![me](/docs/Me.JPG)
