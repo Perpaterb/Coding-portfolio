@@ -33,18 +33,25 @@ Images are high resolution from 4k and 3440x1440 monitors. Images are appropriat
 #Screenshots
 
 Left small mob view, Right close to 16:9
+
 Index
 ![index](/docs/Index.JPG)
+
 Me
 ![me](/docs/Me.JPG)
+
 Blogs
 ![blogs](/docs/blogs.JPG)
+
 A blog
 ![blog](/docs/blog.JPG)
+
 Work
 ![me](/docs/work.JPG)
+
 Skills
 ![blogs](/docs/skills.JPG)
+
 Contact
 ![blog](/docs/contact.JPG)
 
